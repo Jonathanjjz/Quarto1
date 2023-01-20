@@ -1,0 +1,52 @@
+---
+title: "Práctica"
+format: html
+editor: visual
+---
+
+```{r}
+#| label: graficacion-cars
+#| include: true
+#| echo: true
+
+plot(
+  x = cars$speed,
+  y = cars$dist,
+  main = "Velocidad vs distancia de frenado",
+  xlab = "Velocidad (mph)",
+  ylab = "Distancia (pies)"
+)
+```
+
+## Figuras
+
+![Jaguar (*Panthera onca*)](jaguar.jpg)
+
+![Jaguar](jaguar.jpg){width=300}
+
+![Jaguar](jaguar.jpg)
+
+
+[![Jaguar](jaguar.jpg){height=50mm}](https://es.wikipedia.org/wiki/Panthera_onca)
+
+
+![Jaguar](jaguar.jpg){fig-align="right" height=50mm}
+
+
+Actualmente, el portal de datos de la Infraestructura Mundial
+de Información en Biodiversidad (GBIF) agrupa más de 
+dos mil millones de registros de presencia de especies, 
+cuya distribución espacial puede observarse en la @fig-mapagbif.
+
+![Distribución espacial de los registros de presencia agrupados por GBIF](mapa-gbif.png){#fig-mapagbif}
+
+::: {#fig-felinos-grandes-costarica layout-ncol=2}
+
+![Jaguar (*Panthera onca*)](panthera_onca_miniatura.png){#fig-jaguar}
+
+![Puma (*Puma concolor*)](puma_concolor_miniatura.png){#fig-puma}
+
+Felinos más grandes de Costa Rica
+:::
+
+
