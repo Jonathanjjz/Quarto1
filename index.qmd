@@ -1,0 +1,76 @@
+---
+title: "Práctica"
+format: html
+editor: visual
+bibliography: bibliografia/referencias.bib
+---
+
+# Encabezado1
+
+## Encabezado2
+
+### Encabezado3
+
+#### Encabezado4
+
+##### Encabezado5
+
+###### Encabezado6
+
+Este es el texto que corresponde al primer párrafo de un documento.
+
+Este es el texto que corresponde al segundo párrafo de un documento
+
+[FDA](https://www.fda.gov/)
+
+Actualmente, el portal de datos de la Infraestructura Mundial de Información en Biodiversidad (GBIF) agrupa más de dos mil millones de registros de presencia de especies, cuya distribución espacial puede observarse en la @fig-mapagbif.
+
+![Distribución espacial de los registros de presencia agrupados por GBIF](mapa-gbif.png){#fig-mapagbif}
+
+Ziemann, M., Eren, Y., & El-Osta, A. (2016). *Gene name errors are widespread in the scientific literature. Genome Biology*\*, 17(1), 177. <https://doi.org/10.1186/s13059-016-1044-7>
+
+La familia *Felidae* tiene 36 especies [@lamberski_felidae_2015].
+
+Prueba *SINAC* prueba [@sinac_r-sinac-conac-092-2017_2017].
+
+::: {#refs}
+[Felidae](https://doi.org/10.1016/B978-1-4557-7397-8.00047-5) [SINAC](http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=84908&nValor3=109703&strTipM=TC)
+:::
+
+```{r}
+#| label: graficacion-cars
+#| include: true
+#| echo: true
+
+plot(
+  x = cars$speed,
+  y = cars$dist,
+  main = "Velocidad vs distancia de frenado",
+  xlab = "Velocidad (mph)",
+  ylab = "Distancia (pies)"
+)
+```
+
+## Figuras
+
+![Jaguar (*Panthera onca*)](jaguar.jpg)
+
+![Jaguar](jaguar.jpg){width="300"}
+
+![Jaguar](jaguar.jpg)
+
+[![Jaguar](jaguar.jpg){height="50mm"}](https://es.wikipedia.org/wiki/Panthera_onca)
+
+![Jaguar](jaguar.jpg){fig-align="right" height="50mm"}
+
+Actualmente, el portal de datos de la Infraestructura Mundial de Información en Biodiversidad (GBIF) agrupa más de dos mil millones de registros de presencia de especies, cuya distribución espacial puede observarse en la @fig-mapagbif.
+
+![Distribución espacial de los registros de presencia agrupados por GBIF](mapa-gbif.png)
+
+::: {#fig-felinos-grandes-costarica layout-ncol="2"}
+![Jaguar (*Panthera onca*)](panthera_onca_miniatura.png){#fig-jaguar}
+
+![Puma (*Puma concolor*)](puma_concolor_miniatura.png){#fig-puma}
+
+Felinos más grandes de Costa Rica
+:::
